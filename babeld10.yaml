@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: babeld10
+  name: babeld10
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      run: babeld10
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: babeld10
+    spec:
+      containers:
+      - image: zoobab/babeld-in-docker
+        name: babeld10
+        resources: {}
+        securityContext:
+          privileged: true
+status: {}
