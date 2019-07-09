@@ -183,7 +183,7 @@ round-trip min/avg/max = 0.089/0.089/0.089 ms
 Run in Kubernetes
 =================
 
-I run a minimal kubernetes cluster with K3D from the K3S project of Rancher, which juts needs Dockerd running:
+I run a minimal kubernetes cluster with K3D from the K3S project of Rancher (https://github.com/rancher/k3d), which just need Docker running:
 
 ```
 # /usr/local/bin/k3d c --name="babeldcluster"
