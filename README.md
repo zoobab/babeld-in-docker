@@ -331,10 +331,13 @@ babeld10-f46679bf7-vlcv9   1/1       Running   0          2m19s     10.42.0.37  
 babeld10-f46679bf7-w6r2p   1/1       Running   0          6m5s      10.42.0.12   k3d-babeldcluster-server   <none>           <none>
 ```
 
-Problems
-========
+TODO
+====
 
 1. If I create a multinode setup with ```/usr/local/bin/k3d c --name="mworkers"
    --workers 3```, I can only see one third (3) of the 10 neighboors in my
 routing table, which corresponds to the 3 neighboors running on the same
 physical node.
+2. Supply babeld.conf as ConfigMap
+3. Tune babeld.conf to use the least CPU possible
+4. See how many containers per machine/CPU
